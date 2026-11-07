@@ -30,7 +30,7 @@ TerHG[1].place(x=600,y=70,width=50)
 TerHG[2].place(x=650,y=70,width=50)
 
 # Coef 3 + 3
-Label(tk, text="Anglais").place(x=275,y=90)
+Label(tk, text="Langue Viv. A").place(x=275,y=90)
 PreLVA = [Entry(tk), Entry(tk), Entry(tk)]
 PreLVA[0].place(x=350,y=90,width=50)
 PreLVA[1].place(x=400,y=90,width=50)
@@ -41,7 +41,7 @@ TerLVA[1].place(x=600,y=90,width=50)
 TerLVA[2].place(x=650,y=90,width=50)
 
 # Coef 3 + 3
-Label(tk, text="Espagnol/All.").place(x=275,y=110)
+Label(tk, text="Langue Viv. B").place(x=275,y=110)
 PreLVB = [Entry(tk), Entry(tk), Entry(tk)]
 PreLVB[0].place(x=350,y=110,width=50)
 PreLVB[1].place(x=400,y=110,width=50)
