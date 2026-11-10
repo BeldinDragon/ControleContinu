@@ -88,20 +88,23 @@ def moyenne(liste):
         result += liste[i]
     return result/len(liste)
         
+def recuperer(liste):
+    return [(liste[0].get().strip()), (liste[1].get().strip()), (liste[2].get().strip())]
+
 def calculer():
     # Récupération des valeurs en str
-    specialite = [(PreSpecialite[0].get().strip()), (PreSpecialite[1].get().strip()), (PreSpecialite[2].get().strip())]
-    Phg = [(PreHG[0].get().strip()), (PreHG[1].get().strip()), (PreHG[2].get().strip())]
-    Plva = [(PreLVA[0].get().strip()), (PreLVA[1].get().strip()), (PreLVA[2].get().strip())]
-    Plvb = [(PreLVB[0].get().strip()), (PreLVB[1].get().strip()), (PreLVB[2].get().strip())]
-    Pes = [(PreES[0].get().strip()), (PreES[1].get().strip()), (PreES[2].get().strip())]
-    Pemc = [(PreEMC[0].get().strip()), (PreEMC[1].get().strip()), (PreEMC[2].get().strip())]
-    eps = [(TerEPS[0].get().strip()), (TerEPS[1].get().strip()), (TerEPS[2].get().strip())]
-    Thg = [(TerHG[0].get().strip()), (TerHG[1].get().strip()), (TerHG[2].get().strip())]
-    Tlva = [(TerLVA[0].get().strip()), (TerLVA[1].get().strip()), (TerLVA[2].get().strip())]
-    Tlvb = [(TerLVB[0].get().strip()), (TerLVB[1].get().strip()), (TerLVB[2].get().strip())]
-    Tes = [(TerES[0].get().strip()), (TerES[1].get().strip()), (TerES[2].get().strip())]
-    Temc = [(TerEMC[0].get().strip()), (TerEMC[1].get().strip()), (TerEMC[2].get().strip())]
+    specialite = recuperer(PreSpecialite)
+    Phg = recuperer(PreHG)
+    Plva = recuperer(PreLVA)
+    Plvb = recuperer(PreLVB)
+    Pes = recuperer(PreES)
+    Pemc = recuperer(PreEMC)
+    eps = recuperer(TerEPS)
+    Thg = recuperer(TerHG)
+    Tlva = recuperer(TerLVA)
+    Tlvb = recuperer(TerLVB)
+    Tes = recuperer(TerES)
+    Temc = recuperer(TerEMC)
 
     # Elimination des entrées vides et calcul de la moyenne
     specialite = moyenne([float(i) for i in specialite if i!=""])
